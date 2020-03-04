@@ -8,5 +8,10 @@
 	{
 		"type" : "git",
 		"url"  : "https://github.com/Sembiance/vinput"
+	},
+	"dependencies" :
+	{
+		"@sembiance/xu"        : "file:/mnt/compendium/DevLab/node-modules/xu",
+		"tiptoe"               : "file:/mnt/compendium/DevLab/node-modules/tiptoe"
 	}
 }
