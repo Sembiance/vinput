@@ -1,0 +1,12 @@
+{
+	"name"        : "@sembiance/vinput",
+	"version"     : "1.0.0",
+	"author"      : "Robert Schultz <robert@cosmicrealms.com>",
+	"description" : "Virtual input helper",
+	"main"        : "index.js",
+	"repository"  :
+	{
+		"type" : "git",
+		"url"  : "https://github.com/Sembiance/vinput"
+	}
+}
