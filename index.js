@@ -201,7 +201,7 @@ exports.keydown = function keydown(key, cb=() => {})
 {
 	const parts = key.split("+");
 	if(CAPITALS.includes(parts.last()) && !parts.includes("SHIFT"))
-		parts.splice(0, 0, "SHIFT");
+		parts.unshift("SHIFT");
 	
 	parts.map(part => KEY_CODE[part]).serialForEach((code, subcb) => press(code, subcb), cb);
 };
@@ -211,7 +211,7 @@ exports.keyup = function keyup(key, cb=() => {})
 {
 	const parts = key.split("+");
 	if(CAPITALS.includes(parts.last()) && !parts.includes("SHIFT"))
-		parts.splice(0, 0, "SHIFT");
+		parts.unshift("SHIFT");
 	
 	parts.map(part => KEY_CODE[part]).reverse().serialForEach((code, subcb) => release(code, subcb), cb);
 };
@@ -221,7 +221,7 @@ exports.keypress = function keypress(key, cb=() => {})
 {
 	const parts = key.split("+");
 	if(CAPITALS.includes(parts.last()) && !parts.includes("SHIFT"))
-		parts.splice(0, 0, "SHIFT");
+		parts.unshift("SHIFT");
 	
 	const codes = parts.map(part => KEY_CODE[part]);
 

@@ -1,17 +1,18 @@
 {
-	"name"        : "@sembiance/vinput",
-	"version"     : "1.0.0",
-	"author"      : "Robert Schultz <robert@cosmicrealms.com>",
-	"description" : "Virtual input helper",
-	"main"        : "index.js",
-	"repository"  :
+	"name"         : "@sembiance/vinput",
+	"version"      : "1.0.0",
+	"author"       : "Robert Schultz <robert@cosmicrealms.com>",
+	"description"  : "Virtual input helper",
+	"main"         : "index.js",
+	"repository"   :
 	{
 		"type" : "git",
 		"url"  : "https://github.com/Sembiance/vinput"
 	},
 	"dependencies" :
 	{
-		"@sembiance/xu"        : "file:/mnt/compendium/DevLab/node-modules/xu",
-		"tiptoe"               : "file:/mnt/compendium/DevLab/node-modules/tiptoe"
-	}
+		"@sembiance/xu" : "file:/mnt/compendium/DevLab/node-modules/xu",
+		"tiptoe"        : "file:/mnt/compendium/DevLab/node-modules/tiptoe"
+	},
+	"engines"      : { "node" : ">=14" }
 }
