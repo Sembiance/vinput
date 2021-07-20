@@ -187,13 +187,13 @@ const KEY_PRESS_DELAY = 40;
 // Send the given linux key code to the virtual keybaord device to press it down
 function press(code, cb)
 {
-	fs.writeFile(VINPUT_PATH, "+" + code, XU.UTF8, () => setTimeout(cb, KEY_PRESS_DELAY));
+	fs.writeFile(VINPUT_PATH, `+${code}`, XU.UTF8, () => setTimeout(cb, KEY_PRESS_DELAY));
 }
 
 // Send the given linux key code to the virtual keybaord device to release it
 function release(code, cb)
 {
-	fs.writeFile(VINPUT_PATH, "-" + code, XU.UTF8, cb);
+	fs.writeFile(VINPUT_PATH, `-${code}`, XU.UTF8, cb);
 }
 
 // Presses down the given human named key, pressing shift first if needed for a capital letter
